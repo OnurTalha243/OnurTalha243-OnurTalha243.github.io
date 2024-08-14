@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--random-color); /* Random background color */
+}
+
+.counter-container {
+    background-color: #ff6f00; /* Orange color */
+    padding: 30px 20px;
+    border-radius: 50px; /* More rounded corners */
+    width: 180px;
+    height: 250px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.393); /* Larger shadow */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--random-color); /* Random background color */
+}
+
+.display {
+    font-size: 40px;
+    color: #ffffff; /* White text color */
+    background-color: #333333; /* Black screen color */
+    width: 100px;
+    height: 50px;
+    border-radius: 10px; /* More rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #ffffff; /* White button color */
+    border: none;
+    border-radius: 50%; /* Round buttons */
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    color: #333333; /* Black text color */
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: transform 0.1s ease-in-out; /* Slight scaling effect on click */
+}
+
+.button:active {
+    transform: scale(0.95); /* Slight shrink on click */
+}
+
+.button.reset {
+    background-color: #d32f2f; /* Red reset button */
+    color: #ffffff;
+}
+
+.text {
+    color: #ffffff; /* White text color */
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .counter-container {
+        width: 150px;
+        height: 220px;
+        padding: 20px 15px;
+    }
+
+    .display {
+        font-size: 30px;
+        width: 90px;
+        height: 40px;
+    }
+
+    .button {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .counter-container {
+        width: 130px;
+        height: 200px;
+        padding: 15px 10px;
+    }
+
+    .display {
+        font-size: 25px;
+        width: 80px;
+        height: 35px;
+    }
+
+    .button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 10px;
+    }
+}
